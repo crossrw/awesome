@@ -23,6 +23,31 @@ sudo apt-get install -y nodejs
 ## GIT
 
 ```
+# Инициализация локального репозитария
+git init
+
+# Глобальные настройки
+git config --global user.name "Ivan Petrov"
+git config --global user.email "ivan@petrov.ru"
+
+# Просмотр URL удаленного репозитария
+git remote -v
+
+# Установка URL удаленного репозитария
+git remote add origin http://xxx.xxxxxxxxx.xx/xx/xxxx.git
+
+# Изменение URL удаленного репозитария
+git remote set-url origin http://xxx.xxxxxxxxx.xx/xx/xxxx.git
+
+# Добавление всего
+git add .
+
+# COMMIT в локальный репозитарий
+git commit -m "text message"
+
+# Перенос в удаленный репозитарий
+git push -u origin master
+
 # Создание новой ветки и переход в нее
 git checkout -b <name>
 
