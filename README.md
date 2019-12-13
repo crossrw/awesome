@@ -20,52 +20,97 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-## GIT
+## Поиск самых больших файлов
 
 ```
+find . -type f -printf '%s %p\n' | sort -nr | head -10
+```
+
+## GIT
+
 # Инициализация локального репозитария
+
+```
 git init
+```
 
 # Глобальные настройки
+
+```
 git config --global user.name "Ivan Petrov"
 git config --global user.email "ivan@petrov.ru"
+```
 
 # Просмотр URL удаленного репозитария
+
+```
 git remote -v
+```
 
 # Установка URL удаленного репозитария
+
+```
 git remote add origin http://xxx.xxxxxxxxx.xx/xx/xxxx.git
+```
 
 # Изменение URL удаленного репозитария
+
+```
 git remote set-url origin http://xxx.xxxxxxxxx.xx/xx/xxxx.git
+```
 
 # Добавление всего
+
+```
 git add .
+```
 
 # COMMIT в локальный репозитарий
+
+```
 git commit -m "text message"
+```
 
 # Перенос в удаленный репозитарий
+
+```
 git push -u origin master
+```
 
 # Создание новой ветки и переход в нее
+
+```
 git checkout -b <name>
+```
 
 # Создание новой ветки
+
+```
 git branch <name>
+```
 
 # Просмотр списка веток
+
+```
 git branch
+```
 
 # Переключение в другую ветку
+
+```
 git checkout <name>
+```
 
 # Текущий статус изменений
+
+```
 git status
+```
 
 # Слияние указанной ветки с текущей
-git merge <name>
 
+```
+git merge <name>
 ```
 
 ## CVS
