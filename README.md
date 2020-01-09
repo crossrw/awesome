@@ -174,5 +174,6 @@ cvs update -j 1.5 -j 1.3 file.c
 
 ```
 wmic process get ProcessID,ExecutablePath
+wmic process where "name='name.exe'" get ProcessID, ExecutablePath
 ```
 
