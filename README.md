@@ -167,3 +167,12 @@ cvs co -r <имя тэга> <имя проекта>
 ```
 cvs update -j 1.5 -j 1.3 file.c
 ```
+
+## Windows
+
+### Получение путей и PID-ов сервисов
+
+```
+wmic process get ProcessID,ExecutablePath
+```
+
