@@ -113,6 +113,19 @@ git status
 git merge <name>
 ```
 
+### Просмотр списка тегов
+
+```
+git tag
+```
+
+### Добавление тега
+
+```
+git tag -a v1.2 -m "Version 1.2"
+git push --tags
+```
+
 ## CVS
 
 ### Создание нового проекта
